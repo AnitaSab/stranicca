@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7. vježba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img, video, audio, iframe {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>7. vježba</h1>
+
+    <!-- Slika s mapom za interakciju -->
+    <h2>Slika</h2>
+    <img src="https://radio-mreznica.hr/wp-content/uploads/2023/08/Mango-1.jpg" usemap="#image-map" alt="Primjer slike">
+    <map name="image-map">
+        <area shape="rect" coords="50,50,150,150" href="#" alt="Područje 1">
+        <area shape="circle" coords="300,200,100" href="#" alt="Područje 2">
+    </map>
+
+<h2>Video</h2>
+<video controls>
+    <source src="mk/psici.mp4" type="video/mp4">
+    Vaš preglednik ne podržava video tag.
+</video>
+
+    <h2>Audio</h2>
+    <audio controls>
+        <source src="mk/COW SOUND 'MOO' IN HIGH QUALITY.mp3" type="audio/mp3">
+        Vaš preglednik ne podržava audio tag.
+    </audio>
+
+
+    <!-- Ugrađeni sadržaj -->
+    <h2>Ugrađeni YouTube Video</h2>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+
+    <!-- Interaktivna forma -->
+    <h2>Forma</h2>
+    <form action="#">
+        <label for="name">Ime:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="message">Poruka:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <button type="submit">Pošalji</button>
+    </form>
+</div>
+</body>
+</html>
